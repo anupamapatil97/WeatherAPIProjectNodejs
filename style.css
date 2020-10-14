@@ -1,0 +1,135 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto 0; */
+    height: 100vh;
+
+}
+.card{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #99efef;
+}
+.rotate{
+    position: relative;
+    height: 500px;
+    width:500px ;
+    /* background-color: brown; */
+    /* opacity: 0.5; */
+    left: -100px;
+    top:5%;
+}
+.wave-one{
+    width: 490px;
+    height: 450px;
+    background-color: rgb(134, 216, 10);
+    border-radius: 380px;
+    position: absolute;
+    animation: spin 3.5s linear infinite alternate;
+    top: 0px;
+}
+.wave-two{
+    width: 470px;
+    height: 450px;
+    background-color:#09ad0e;
+    border-radius: 380px;
+    position: absolute;
+    top: 10 px;
+    left: 10px;
+    animation: spin 3s linear infinite alternate;
+}
+.wave-three{
+    width: 490px;
+    height: 450px;
+    background-color: #188118;
+    border-radius: 380px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    animation: spin 3.5s linear infinite alternate;
+
+
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.sun{
+    height: 130px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun .fas{
+    font-size: 50px;
+    animation: pops 5s ease infinite;
+
+}
+@keyframes pops{
+    0%{
+        font-size: 50px;
+/* padding-left: 20px; */
+
+
+    }
+    50%{
+        font-size: 100px;
+        /* padding-right: 50px; */
+    }
+    /* 100%{
+        padding-left: 20px;
+    } */
+
+
+}
+.data{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 41%;
+    
+    text-align: center;
+}
+.main{
+position: relative;
+top: 0%;
+width: 100%;
+height: auto;
+display: flex;
+text-align: center;
+border: 1px white;
+justify-content: center;
+align-items: center;
+}
+.icon{
+    width: 30%;
+    
+}
+.city h2{
+    font-size: 10px;
+}
+.city{
+    width: 70%;
+    color: yellow;
+}
+.fa-street-view{
+    animation: floating 2.5s linear infinite;
+    color: pink;
+}
+@keyframes floating {
+    0%{
+    padding-left: 20px;
+    }
+    50%{
+        padding-right: 40px;
+    }
+    100%{
+        padding-left: 20px;
+     } 
+}
